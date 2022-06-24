@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993201058293",
+    "project_id": "fir-batch04",
+    "storage_bucket": "fir-batch04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993201058293:android:b383f8375bef96e9b930bc",
+        "android_client_info": {
+          "package_name": "com.example.ecomadminbatch04"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993201058293-por178mi18p4rqubhbsb1ngivalt936l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_B2KNq9rrisbtk-fVN-yAvED2k8CG6po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993201058293-por178mi18p4rqubhbsb1ngivalt936l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

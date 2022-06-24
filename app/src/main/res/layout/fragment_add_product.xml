@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".AddProductFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameInputET"
+                    android:hint="Product Name"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/descriptionInputET"
+                    android:maxLines="3"
+                    android:hint="Description"/>
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/purchasePriceET"
+                    android:hint="Purchase Price"/>
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/salePriceET"
+                    android:hint="Sale Price"/>
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/quantityET"
+                    android:hint="Quantity"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Category"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/catSP"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateBtn"
+                    android:text="Select Date"
+                    android:textColor="@color/black"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Image"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/productIV"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/captureBtn"
+                    android:text="Capture"
+                    android:textColor="@color/black"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/galleryBtn"
+                    android:text="Open Gallery"
+                    android:textColor="@color/black"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saveBtn"
+                    android:text="SAVE"
+                    android:textColor="@color/black"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+        </ScrollView>
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mProgressbar"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+</layout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.ecomadminbatch04.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_viewProductFragment"
+            app:destination="@id/viewProductFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.ecomadminbatch04.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.example.ecomadminbatch04.AddProductFragment"
+        android:label="Add Product"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/viewProductFragment"
+        android:name="com.example.ecomadminbatch04.ViewProductFragment"
+        android:label="All Products"
+        tools:layout="@layout/fragment_view_product" >
+        <action
+            android:id="@+id/action_viewProductFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.ecomadminbatch04.CategoryFragment"
+        android:label="Category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.example.ecomadminbatch04.ProductDetailsFragment"
+        android:label="Product Details"
+        tools:layout="@layout/fragment_product_details" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.ecomadminbatch04.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
